@@ -16,7 +16,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-violet-100 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2">
@@ -52,8 +52,10 @@ export default function Footer() {
             <div className="text-sm font-semibold text-gray-900">Kontakt</div>
             <p className="mt-3 text-sm text-gray-600">Hast du Fragen? Wir helfen dir gerne weiter.</p>
             <form className="mt-4 grid gap-3">
-              <input type="email" placeholder="Deine E-Mail" className="w-full rounded-lg border border-violet-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-500" />
-              <textarea placeholder="Nachricht" className="w-full rounded-lg border border-violet-200 px-3 py-2 text-sm h-24 focus:outline-none focus:ring-2 focus:ring-violet-500" />
+              <label className="sr-only" htmlFor="email">E-Mail</label>
+              <input id="email" type="email" placeholder="Deine E-Mail" className="w-full rounded-lg border border-violet-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-500" />
+              <label className="sr-only" htmlFor="message">Nachricht</label>
+              <textarea id="message" placeholder="Nachricht" className="w-full rounded-lg border border-violet-200 px-3 py-2 text-sm h-24 focus:outline-none focus:ring-2 focus:ring-violet-500" />
               <button type="button" className="rounded-lg bg-gradient-to-br from-violet-600 to-fuchsia-600 text-white px-4 py-2 text-sm font-medium shadow-md">Senden</button>
             </form>
           </div>
